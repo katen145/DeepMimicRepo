@@ -1,0 +1,4 @@
+--scene kin_char
+
+--character_file data/characters/walker3d_long.txt
+--motion_file data/motions/P5_6_min_walking_test.h5.looped_normal.txt

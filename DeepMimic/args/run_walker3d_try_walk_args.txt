@@ -1,0 +1,33 @@
+--scene imitate
+
+--num_update_substeps 10
+--num_sim_substeps 2
+--world_scale 4
+
+--terrain_file data/terrain/plane.txt
+
+--char_types general
+--character_files data/characters/walker3dsmallerfeet.txt
+--enable_char_soft_contact false
+#--enable_char_contact_fall false
+--fall_contact_bodies 0 1 2 4 5
+--enable_rand_char_placement true
+
+--char_ctrls ct_pd
+--char_ctrl_files data/controllers/walker3d_ctrl.txt
+#--motion_file data/motions/P6_6_min_walking_test.h5.looped_long.txt
+#--motion_file data/motions/P5_6_min_walking_test.h5.longer_loop.txt
+#--motion_file data/motions/P5_6_min_walking_test.h5.long_loop_z.txt
+
+
+#--motion_file data/motions/P5_6_min_walking_test.h5.txt
+#--motion_file data/motions/P6_6_min_walking_test.h5.looped_long.txt
+--motion_file data/motions/P6_6_min_walking_test.h5.long_loop_z.txt
+
+--sync_char_root_pos true
+--sync_char_root_rot false
+
+--agent_files data/agents/ct_agent_walker_ppo.txt
+--train_agents false
+
+--model_files data/policies/walker3d/agent0_model.ckpt
